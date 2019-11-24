@@ -1,0 +1,16 @@
+# 配置日志文件路径
+[log]
+log_file = "log/jobmanager.log"
+
+# 配置对内通信网络信息
+[socket]
+sock = "jobmanager"                     # 抽象名
+
+# 配置表决通信信息
+[dist]
+port = 10793
+
+# 执行体个数，紧跟着执行体名称
+friend_num = 2
+friend_name = node2
+friend_name = node3
